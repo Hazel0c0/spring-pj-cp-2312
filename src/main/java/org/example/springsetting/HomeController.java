@@ -10,8 +10,12 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        log.info("homehome z");
+        log.info("homehome");
         return "index";
     }
-
+    @GetMapping("/test")
+    public String tset() {
+        log.info("test");
+        return "test";
+    }
 }
