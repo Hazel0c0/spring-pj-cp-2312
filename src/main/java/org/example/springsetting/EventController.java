@@ -8,9 +8,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Slf4j
 public class EventController {
 
-    @GetMapping("/event")
-    public String home() {
-        log.info("event");
-        return "event";
+    @GetMapping("/javascript/event")
+    public String jsEvent() {
+        log.info("java script event");
+        return "/javascript/event";
+    }
+
+    @GetMapping("/jQuery/event")
+    public String jqEvent() {
+        log.info("jQuery event");
+        return "/jQuery/event";
     }
 }
