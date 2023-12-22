@@ -21,7 +21,7 @@
 <button type="button" id="consoleBtn">Console Log</button>
 
 <!-- 버튼 예시 3: 페이지 이동 -->
-<button type="button" id="redirectBtn">Redirect</button>
+<button type="button" id="redirectBtn">Redirect : jq-e</button>
 
 
 </body>
@@ -40,6 +40,6 @@
 
     // 다른 페이지로 이동
     document.getElementById("redirectBtn").addEventListener("click", function() {
-        window.location.href = "다른페이지.jsp"; // 이동할 페이지 경로를 적어주세요.
+        window.location.href = "../jQuery/event"; // 이동할 페이지 경로를 적어주세요.
     });
 </script>
