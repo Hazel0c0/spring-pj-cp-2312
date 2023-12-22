@@ -10,13 +10,24 @@
 
 <button id="myButton">Click me!</button>
 
+<input type="text" id="change_btn" placeholder="Type something here...">
+
+
 <script>
-    // jQuery 사용 예시: 버튼 클릭 시 메시지 출력
-    $(document).ready(function(){
-        $("#myButton").click(function(){
+
+    // $(document).ready(function () {
+    $(() => {
+
+        $("#myButton").click(function () {
             alert("버튼이 클릭되었습니다.");
         });
+
+        $('#change_btn').change(function () {
+            alert('Input value changed!');
+        });
     });
+
+
 </script>
 </body>
 </html>
