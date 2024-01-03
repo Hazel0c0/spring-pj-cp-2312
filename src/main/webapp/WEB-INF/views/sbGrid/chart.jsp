@@ -44,7 +44,7 @@
 
     <div>* 시뮬레이션 결과</div>
 
-    <div id="viewgrid_choice" style="height: calc(100% - 126px);"></div>
+    <div id="view_grid_choice" style="height: calc(100% - 126px);"></div>
 
     <div id="viewgrid_count" class="gridCount"></div>
     <div id="viewgrid_result" style="height: calc(100% - 126px);"></div>
@@ -62,7 +62,7 @@
 
 </div>
 <script>
-    var obj, grid, griddata = [];
+    var obj, gridId, grid_data = [];
     obj = {
         fn_search: () => {
 
@@ -78,9 +78,9 @@
 
             // 운영룰
             let SBGridProperties_choice = {
-                parentid: 'viewgrid_choice',
-                id: 'grid',
-                jsonref: 'griddata',
+                parentid: 'view_grid_choice',
+                id: 'gridId',
+                jsonref: 'grid_data',
                 rowheader: 'seq',
                 columns: [
                     {caption: ['STR 룰 ID'], ref: 'strRulId', width: '10%', style: 'text-align:center', type: 'output'},
